@@ -1,0 +1,17 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import "tailwindcss";
+
+/* Scrollbar personalizada neón */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0E;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A1F45;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9D4EDD;
+}
