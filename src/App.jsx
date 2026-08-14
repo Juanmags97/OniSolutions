@@ -3,6 +3,7 @@ import NavbarOni from './components/NavbarOni';
 import HeroOni from './components/HeroOni';
 import ServiciosOni from './components/ServiciosOni';
 import PortfolioOni from './components/PortfolioOni';
+import SobreMi from './components/SobreMiOni.jsx';
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <NavbarOni />
       <main>
         <HeroOni />
+        <SobreMi />
         <ServiciosOni />
         <PortfolioOni />
       </main>
