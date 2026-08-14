@@ -24,7 +24,7 @@ export default function SobreMiOni() {
 
       <div className="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
-        {/* BLOQUE IZQUIERDO: TEXTO DE PRESENTACIÓN */}
+        {/* BLOQUE IZQUIERDO: TEXTO DE PRESENTACIÓN Y VISIÓN */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -37,25 +37,29 @@ export default function SobreMiOni() {
           </span>
           
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight [font-family:'Orbitron',sans-serif]">
-            Ingeniería de Software con <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-fuchsia-400">ADN Cyberpunk</span>
+            Pasión por la Informática, <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-fuchsia-400">Visión sin Límites</span>
           </h2>
 
-          <p className="text-neutral-400 text-sm leading-relaxed">
-            En Oni Solutions nos enfocamos en construir ecosistemas digitales modernos, veloces y blindados. Entendemos el desarrollo no solo como escribir código, sino como diseñar experiencias visuales de alto impacto respaldadas por arquitectura IT sólida y ciberseguridad.
+          <p className="text-neutral-400 text-sm sm:text-base leading-relaxed">
+            <strong className="text-white">Oni Solutions</strong> nace como un emprendimiento independiente impulsado por la dedicación a la tecnología, la arquitectura de sistemas y la ciberseguridad.
           </p>
 
           <p className="text-neutral-400 text-sm leading-relaxed">
-            Desde landing pages corporativas de última generación hasta sistemas con bases de datos relacionales y optimización de redes de alta velocidad, transformamos ideas en software funcional.
+            Nuestro objetivo es claro: abrirnos paso y construir un nombre de referencia en el sector de la informática, demostrando que con código limpio, atención personalizada y soluciones modernas de alto impacto podemos ayudar a que empresas y proyectos alcancen su máximo potencial digital.
+          </p>
+
+          <p className="text-neutral-400 text-sm leading-relaxed">
+            Desde el desarrollo web responsivo hasta la optimización de infraestructura y seguridad de datos, nos involucramos en cada detalle para garantizar calidad, velocidad y soporte real.
           </p>
 
           <div className="pt-4 flex items-center gap-6">
             <div className="border-l-2 border-purple-500 pl-4">
               <span className="block text-2xl font-extrabold text-white [font-family:'Orbitron',sans-serif]">100%</span>
-              <span className="text-xs font-mono text-neutral-400">Código Optimizado</span>
+              <span className="text-xs font-mono text-neutral-400">Compromiso y Dedicación</span>
             </div>
             <div className="border-l-2 border-fuchsia-500 pl-4">
               <span className="block text-2xl font-extrabold text-white [font-family:'Orbitron',sans-serif]">24/7</span>
-              <span className="text-xs font-mono text-neutral-400">Disponibilidad & Soporte</span>
+              <span className="text-xs font-mono text-neutral-400">Atención Directa</span>
             </div>
           </div>
         </motion.div>
@@ -94,7 +98,7 @@ export default function SobreMiOni() {
 
           <div className="p-4 rounded-xl bg-purple-950/20 border border-purple-500/30 text-xs text-purple-300 font-mono flex items-center gap-3">
             <i className="fa-solid fa-terminal text-purple-400 text-lg"></i>
-            <span>Infraestructura preparada para escalabilidad y máxima performance.</span>
+            <span>Construyendo soluciones escalables desde la base.</span>
           </div>
         </motion.div>
 
