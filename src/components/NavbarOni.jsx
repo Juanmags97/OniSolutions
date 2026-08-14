@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logoOni from '../assets/Oni.png'; // <-- Importación directa de la imagen desde assets
+import logoOni from '../assets/OniNav.png'; // <-- Importación directa de la imagen desde assets
 
 export default function NavbarOni() {
   const [open, setOpen] = useState(false);
