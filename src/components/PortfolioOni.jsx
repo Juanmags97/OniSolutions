@@ -9,7 +9,8 @@ const PROYECTOS = [
     categoria: 'Desarrollo Web & Branding',
     descripcion: 'Plataforma institucional responsiva con soporte i18n multilenguaje, reproductor de video horizontal HD, visor de dossier PDF nativo y conexión directa de solicitudes a Google Sheets.',
     tags: ['React', 'Tailwind CSS', 'i18next', 'Google Apps Script'],
-    linkText: 'Ver Detalles // 詳細'
+    linkText: 'Ver Detalles // 詳細',
+    link: '#' // Podés agregar acá el enlace correspondiente si lo deseás
   },
   {
     codigo: 'PROJECT_02',
@@ -18,7 +19,8 @@ const PROYECTOS = [
     categoria: 'Fullstack / Base de Datos SQL',
     descripcion: 'Sistema de catálogo inmobiliario con filtros avanzados por ubicación, tipo y rango de precio. Integración de Supabase (PostgreSQL + Storage) para gestión de inventarios.',
     tags: ['React', 'Supabase', 'PostgreSQL', 'Tailwind CSS'],
-    linkText: 'Ver Proyecto // 詳細'
+    linkText: 'Ver Proyecto // 詳細',
+    link: 'https://juanmags97.github.io/web-inmobiliaria/'
   }
 ];
 
@@ -94,10 +96,15 @@ export default function PortfolioOni() {
                   ))}
                 </div>
 
-                <div className="text-xs font-mono font-bold text-purple-400 flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                <a 
+                  href={proj.link} 
+                  target={proj.link.startsWith('http') ? '_blank' : '_self'}
+                  rel={proj.link.startsWith('http') ? 'noopener noreferrer' : ''}
+                  className="text-xs font-mono font-bold text-purple-400 flex items-center gap-2 hover:text-purple-300 group-hover:translate-x-1 transition-all"
+                >
                   <span>{proj.linkText}</span>
                   <i className="fa-solid fa-arrow-right text-xs"></i>
-                </div>
+                </a>
               </div>
             </motion.div>
           ))}
