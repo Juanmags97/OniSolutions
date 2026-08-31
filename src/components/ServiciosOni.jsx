@@ -20,6 +20,14 @@ const SERVICIOS = [
   },
   {
     id: 'SYS_03',
+    kanji: '知能',
+    icono: 'fa-robot',
+    titulo: 'Bots de IA & Automatizaciones Inteligentes',
+    descripcion: 'Desarrollo de agentes conversacionales y bots inteligentes para atención al cliente, captación de leads y calificación de consultas. Automatización de flujos de trabajo e integración directa con WhatsApp y CRM.',
+    tags: ['AI Agents', 'OpenAI / Claude', 'WhatsApp Bot', 'Automatizaciones']
+  },
+  {
+    id: 'SYS_04',
     kanji: '網',
     icono: 'fa-server',
     titulo: 'Soporte IT & Infraestructura de Redes',
@@ -27,7 +35,7 @@ const SERVICIOS = [
     tags: ['Redes Cat 6a', 'Linux/Debian', 'Servidores', 'Hardware IT']
   },
   {
-    id: 'SYS_04',
+    id: 'SYS_05',
     kanji: '安全',
     icono: 'fa-shield-halved',
     titulo: 'Ciberseguridad & Performance',
@@ -64,7 +72,7 @@ export default function ServiciosOni() {
         </div>
 
         {/* GRILLA DE SERVICIOS */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {SERVICIOS.map((item, i) => (
             <motion.div
               key={item.id}
@@ -73,7 +81,9 @@ export default function ServiciosOni() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.12 }}
               whileHover={{ y: -6 }}
-              className="group relative bg-[#120F1D]/80 border border-purple-500/20 p-8 rounded-2xl backdrop-blur-xl hover:border-purple-500/60 hover:shadow-[0_0_30px_rgba(157,78,221,0.2)] transition-all duration-300 flex flex-col justify-between"
+              className={`group relative bg-[#120F1D]/80 border border-purple-500/20 p-8 rounded-2xl backdrop-blur-xl hover:border-purple-500/60 hover:shadow-[0_0_30px_rgba(157,78,221,0.2)] transition-all duration-300 flex flex-col justify-between ${
+                i === SERVICIOS.length - 1 && SERVICIOS.length % 2 !== 0 ? 'md:col-span-2 lg:col-span-1' : ''
+              }`}
             >
               {/* Kanji decorativo interno */}
               <span className="absolute top-4 right-6 text-2xl font-bold text-purple-500/10 [font-family:'Noto_Sans_JP',sans-serif]">

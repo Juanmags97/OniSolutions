@@ -5,6 +5,7 @@ const STACK = [
   { nombre: 'React / Vite', categoria: 'Frontend', kanji: 'UI' },
   { nombre: 'Tailwind CSS', categoria: 'UI / Styling', kanji: 'Style' },
   { nombre: 'Supabase / SQL', categoria: 'Backend & DB', kanji: 'DB' },
+  { nombre: 'AI Bots / Agents', categoria: 'Inteligencia Artificial', kanji: 'AI' },
   { nombre: 'Linux / Debian', categoria: 'Infraestructura', kanji: 'OS' },
   { nombre: 'Cloudflare', categoria: 'Seguridad & CDN', kanji: 'SEC' },
   { nombre: 'Git / GitHub', categoria: 'Version Control', kanji: 'GIT' },
@@ -49,7 +50,7 @@ export default function SobreMiOni() {
           </p>
 
           <p className="text-neutral-400 text-sm leading-relaxed">
-            Desde el desarrollo web responsivo hasta la optimización de infraestructura y seguridad de datos, nos involucramos en cada detalle para garantizar calidad, velocidad y soporte real.
+            Desde el desarrollo web responsivo y agentes inteligentes de IA hasta la optimización de infraestructura y seguridad de datos, nos involucramos en cada detalle para garantizar calidad, velocidad y soporte real.
           </p>
 
           <div className="pt-4 flex items-center gap-6">
@@ -81,7 +82,9 @@ export default function SobreMiOni() {
             {STACK.map((tech, i) => (
               <div 
                 key={i} 
-                className="relative bg-[#0A0A0E] border border-purple-500/20 p-4 rounded-xl hover:border-purple-500/50 transition-colors group"
+                className={`relative bg-[#0A0A0E] border border-purple-500/20 p-4 rounded-xl hover:border-purple-500/50 transition-colors group ${
+                  i === STACK.length - 1 && STACK.length % 2 !== 0 ? 'col-span-2' : ''
+                }`}
               >
                 <span className="absolute top-2 right-3 text-[9px] font-mono text-purple-500/30 font-bold">
                   [{tech.kanji}]
