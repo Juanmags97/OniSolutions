@@ -36,7 +36,9 @@ export default function NavbarOni() {
           <a href="#about" className="hover:text-purple-400 transition-colors">// 02. 概要 (Nosotros)</a>
           <a href="#portfolio" className="hover:text-purple-400 transition-colors">// 03. 実績 (Portfolio)</a>
           <a 
-            href="#contacto" 
+            href="https://www.instagram.com/0ni.solutions/" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="px-5 py-2.5 rounded-lg border border-purple-500/40 text-purple-300 hover:bg-purple-600 hover:text-white hover:border-purple-600 transition-all shadow-[0_0_15px_rgba(157,78,221,0.2)]"
           >
             連絡先 Contacto
@@ -80,7 +82,15 @@ export default function NavbarOni() {
           <a href="#servicios" onClick={() => setOpen(false)} className="block py-2 hover:text-purple-400 transition-colors">// 01. Servicios サービス</a>
           <a href="#about" onClick={() => setOpen(false)} className="block py-2 hover:text-purple-400 transition-colors">// 02. Nosotros 概要</a>
           <a href="#portfolio" onClick={() => setOpen(false)} className="block py-2 hover:text-purple-400 transition-colors">// 03. Portfolio 実績</a>
-          <a href="#contacto" onClick={() => setOpen(false)} className="block py-2 text-purple-400 font-bold hover:text-purple-300 transition-colors">// Contacto 連絡先</a>
+          <a 
+            href="https://www.instagram.com/0ni.solutions/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            onClick={() => setOpen(false)} 
+            className="block py-2 text-purple-400 font-bold hover:text-purple-300 transition-colors"
+          >
+            // Contacto 連絡先
+          </a>
         </div>
       </div>
     </nav>
