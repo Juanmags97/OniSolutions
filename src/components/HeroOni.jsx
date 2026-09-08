@@ -47,7 +47,9 @@ export default function HeroOni() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
             <a
-              href="#contacto"
+              href="https://www.instagram.com/0ni.solutions/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-purple-600 to-fuchsia-600 font-bold text-xs uppercase tracking-widest text-white shadow-[0_0_25px_rgba(157,78,221,0.4)] hover:shadow-[0_0_35px_rgba(157,78,221,0.7)] hover:scale-[1.02] transition-all duration-300 text-center [font-family:'Orbitron',sans-serif]"
             >
               Iniciar Proyecto // プロジェクト
