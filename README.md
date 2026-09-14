@@ -1,16 +1,34 @@
-# React + Vite
+# Oni Solutions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio corporativo de **Oni Solutions**, desarrollado con React, Vite, Tailwind CSS y Framer Motion.
 
-Currently, two official plugins are available:
+## Oferta publicada
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Desarrollo Web y experiencias digitales.
+- Plataformas, datos y sistemas de gestión.
+- Inteligencia artificial y automatizaciones.
+- Desarrollo de aplicaciones móviles para iOS y Android.
 
-## React Compiler
+La sección de aplicaciones móviles cubre conceptualización, prototipado, diseño UI/UX, desarrollo, validación, publicación en App Store y Google Play, mantenimiento y evolución continua.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Desarrollo local
 
-## Expanding the ESLint configuration
+```bash
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Validación
+
+```bash
+npm run lint
+npm run build
+```
+
+## Despliegue
+
+El proyecto conserva la configuración de despliegue existente. Para generar y desplegar la versión de producción:
+
+```bash
+npm run deploy
+```
