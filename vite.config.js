@@ -7,4 +7,7 @@ import { cloudflare } from "@cloudflare/vite-plugin";
 export default defineConfig({
   plugins: [react(), cloudflare()],
   base: '/', // <-- Reemplazá 'nombre-de-tu-repositorio' por el nombre tal cual está en GitHub (ej: /OniSolutions/)
+  server: {
+    allowedHosts: ['.manus.computer'],
+  },
 })
