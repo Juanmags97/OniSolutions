@@ -49,7 +49,7 @@ export default function FooterOni() {
           >
             @0ni.solutions <i className="fa-solid fa-arrow-up-right-from-square text-[10px]" aria-hidden="true"></i>
           </a>
-          <p className="mt-4 text-[10px] font-mono uppercase tracking-wider text-neutral-600">Buenos Aires · Argentina</p>
+          <p className="mt-4 text-[10px] font-mono uppercase tracking-wider text-neutral-600">Salta · Argentina</p>
         </div>
       </div>
 
