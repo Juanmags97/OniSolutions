@@ -8,6 +8,7 @@ const PROYECTOS = [
     categoria: 'Desarrollo Web & Branding',
     descripcion: 'Plataforma institucional responsiva con experiencia multilenguaje, contenido audiovisual, dossier digital y conexión directa de solicitudes comerciales.',
     tags: ['Web Institucional', 'Multilenguaje', 'Contenido Digital', 'Integraciones'],
+    linkText: 'Ver Proyecto // 公式サイト',
     link: 'https://gwdesarrollos.com.py/'
   },
   {
@@ -55,21 +56,27 @@ export default function PortfolioOni() {
               transition={{ duration: 0.5, delay: index * 0.15 }}
               className="group relative bg-[#120F1D] border border-purple-500/20 rounded-2xl p-8 hover:border-purple-500/50 hover:shadow-[0_0_35px_rgba(157,78,221,0.15)] transition-all duration-300 flex flex-col justify-between"
             >
-              <span className="absolute top-4 right-6 text-2xl font-bold text-purple-500/10 [font-family:'Noto_Sans_JP',sans-serif]">{proyecto.kanji}</span>
+              <span className="absolute top-4 right-6 text-2xl font-bold text-purple-500/10 [font-family:'Noto_Sans_JP',sans-serif]">
+                {proyecto.kanji}
+              </span>
 
               <div className="space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 pr-8">
                   <span className="text-[10px] font-mono text-purple-400/70 tracking-widest">{proyecto.codigo}</span>
                   <span className="text-xs font-mono text-fuchsia-400 uppercase tracking-wider">{proyecto.categoria}</span>
                 </div>
-                <h3 className="text-2xl font-bold text-white group-hover:text-purple-300 transition-colors [font-family:'Orbitron',sans-serif]">{proyecto.titulo}</h3>
+                <h3 className="text-2xl font-bold text-white group-hover:text-purple-300 transition-colors [font-family:'Orbitron',sans-serif]">
+                  {proyecto.titulo}
+                </h3>
                 <p className="text-neutral-400 text-xs sm:text-sm leading-relaxed">{proyecto.descripcion}</p>
               </div>
 
               <div className="pt-8 mt-6 border-t border-purple-500/10 flex flex-wrap items-center justify-between gap-4">
                 <div className="flex flex-wrap gap-2">
                   {proyecto.tags.map((tag) => (
-                    <span key={tag} className="text-[10px] font-mono text-purple-300 bg-purple-950/40 px-2.5 py-1 rounded border border-purple-500/30">#{tag}</span>
+                    <span key={tag} className="text-[10px] font-mono text-purple-300 bg-purple-950/40 px-2.5 py-1 rounded border border-purple-500/30">
+                      #{tag}
+                    </span>
                   ))}
                 </div>
 
@@ -78,10 +85,10 @@ export default function PortfolioOni() {
                     href={proyecto.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs font-mono font-bold text-purple-400 flex items-center gap-2 hover:text-purple-300 group-hover:translate-x-1 transition-all"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-mono font-semibold text-purple-300 bg-purple-950/40 border border-purple-500/30 hover:bg-purple-900/40 hover:border-purple-400 hover:text-white hover:shadow-[0_0_15px_rgba(168,85,247,0.3)] transition-all duration-200"
                   >
-                    <span>{proyecto.linkText}</span>
-                    <i className="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+                    <span>{proyecto.linkText || 'Ver Proyecto'}</span>
+                    <span className="group-hover:translate-x-1 transition-transform">→</span>
                   </a>
                 ) : (
                   <span className="text-xs font-mono text-neutral-500">Caso de estudio</span>
