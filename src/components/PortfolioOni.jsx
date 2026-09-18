@@ -8,6 +8,7 @@ const PROYECTOS = [
     categoria: 'Desarrollo Web & Branding',
     descripcion: 'Plataforma institucional responsiva con experiencia multilenguaje, contenido audiovisual, dossier digital y conexión directa de solicitudes comerciales.',
     tags: ['Web Institucional', 'Multilenguaje', 'Contenido Digital', 'Integraciones'],
+    link: 'https://gwdesarrollos.com.py/'
   },
   {
     codigo: 'PROJECT_02',
