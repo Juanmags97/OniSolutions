@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { whatsappUrl, MENSAJES_WSP } from '../contacto';
 
 const ETAPAS = [
   {
@@ -71,7 +72,7 @@ export default function MobileAppsOni() {
             </div>
 
             <a
-              href="https://www.instagram.com/0ni.solutions/"
+              href={whatsappUrl(MENSAJES_WSP.app)}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 mt-9 px-8 py-3.5 rounded-xl bg-gradient-to-r from-purple-600 to-fuchsia-600 font-bold text-xs uppercase tracking-widest text-white shadow-[0_0_25px_rgba(157,78,221,0.35)] hover:shadow-[0_0_35px_rgba(157,78,221,0.65)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 [font-family:'Orbitron',sans-serif]"
@@ -200,7 +201,7 @@ export default function MobileAppsOni() {
             <h3 className="mt-3 max-w-3xl text-2xl sm:text-3xl font-bold [font-family:'Orbitron',sans-serif]">Hagamos que tu idea llegue a las manos de tus usuarios.</h3>
           </div>
           <a
-            href="https://www.instagram.com/0ni.solutions/"
+            href={whatsappUrl(MENSAJES_WSP.app)}
             target="_blank"
             rel="noopener noreferrer"
             className="shrink-0 inline-flex items-center justify-center gap-3 px-7 py-3.5 rounded-xl bg-gradient-to-r from-purple-600 to-fuchsia-600 font-bold text-xs uppercase tracking-widest text-white hover:shadow-[0_0_30px_rgba(157,78,221,0.5)] active:scale-[0.98] transition-all [font-family:'Orbitron',sans-serif]"

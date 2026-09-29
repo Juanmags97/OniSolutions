@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import logoOni from '../assets/OniFinal.png';
+import { whatsappUrl, MENSAJES_WSP } from '../contacto';
 
 export default function HeroOni() {
   return (
@@ -42,7 +43,7 @@ export default function HeroOni() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
             <a
-              href="https://www.instagram.com/0ni.solutions/"
+              href={whatsappUrl(MENSAJES_WSP.proyecto)}
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 sm:px-8 py-3.5 rounded-xl bg-gradient-to-r from-purple-600 to-fuchsia-600 font-bold text-[10px] sm:text-xs uppercase tracking-widest whitespace-nowrap text-white shadow-[0_0_25px_rgba(157,78,221,0.4)] hover:shadow-[0_0_35px_rgba(157,78,221,0.7)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 text-center [font-family:'Orbitron',sans-serif]"

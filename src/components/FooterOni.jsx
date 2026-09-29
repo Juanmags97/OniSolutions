@@ -1,4 +1,5 @@
 import logoOni from '../assets/OniNav.png';
+import { whatsappUrl, INSTAGRAM_URL } from '../contacto';
 
 const SERVICIOS = [
   ['Desarrollo Web', '#servicios'],
@@ -42,12 +43,20 @@ export default function FooterOni() {
         <div>
           <h2 className="text-[10px] font-mono uppercase tracking-widest text-purple-400">// Contacto</h2>
           <a
-            href="https://www.instagram.com/0ni.solutions/"
+            href={whatsappUrl()}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 mt-5 text-sm text-white hover:text-purple-300 transition-colors"
+            className="flex items-center gap-2 mt-5 text-sm text-white hover:text-purple-300 transition-colors"
           >
-            @0ni.solutions <i className="fa-solid fa-arrow-up-right-from-square text-[10px]" aria-hidden="true"></i>
+            <i className="fa-brands fa-whatsapp text-base text-[#25D366]" aria-hidden="true"></i> +54 9 387 636-8439
+          </a>
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 mt-3 text-sm text-white hover:text-purple-300 transition-colors"
+          >
+            <i className="fa-brands fa-instagram text-base text-purple-400" aria-hidden="true"></i> @0ni.solutions
           </a>
           <p className="mt-4 text-[10px] font-mono uppercase tracking-wider text-neutral-600">Salta · Argentina</p>
         </div>

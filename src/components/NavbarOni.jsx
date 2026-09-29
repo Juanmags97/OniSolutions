@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import logoOni from '../assets/OniNav.png';
+import { whatsappUrl } from '../contacto';
 
 const NAV_ITEMS = [
   ['01', 'サービス', 'Servicios', '#servicios'],
@@ -36,7 +37,7 @@ export default function NavbarOni() {
             </a>
           ))}
           <a
-            href="https://www.instagram.com/0ni.solutions/"
+            href={whatsappUrl()}
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2.5 rounded-lg border border-purple-500/40 text-purple-300 hover:bg-purple-600 hover:text-white hover:border-purple-600 transition-all shadow-[0_0_15px_rgba(157,78,221,0.2)]"
@@ -72,7 +73,7 @@ export default function NavbarOni() {
             </a>
           ))}
           <a
-            href="https://www.instagram.com/0ni.solutions/"
+            href={whatsappUrl()}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
