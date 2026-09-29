@@ -34,14 +34,14 @@ export const TEMAS = [
     etiqueta: '💰 Precios',
     palabras: ['precio', 'precios', 'costo', 'cuesta', 'sale', 'salen', 'cobran', 'presupuesto', 'cotizar', 'cotizacion', 'valor', 'plan', 'planes'],
     respuesta:
-      'Te paso un estimado orientativo (no es un presupuesto):\n🌐 Páginas web: alrededor de USD 200-300\n🤖 Asistentes de IA: alrededor de USD 300-400\n📱 Apps y sistemas: alrededor de USD 500-800\n\nEl precio real depende de tu proyecto: escribinos y te cotizamos directamente, sin compromiso.',
+      'Te paso un estimado orientativo (no es un presupuesto):\n🌐 Landing o web institucional: USD 250 a 600\n🛒 Tienda online: desde USD 700\n🤖 Asistente de WhatsApp: instalación USD 100 a 250 + abono desde USD 25/mes\n📱 Apps y sistemas a medida: desde USD 2.500\n\nEl precio real depende de tu proyecto. Para un presupuesto exacto te atiende uno de los socios por WhatsApp, sin compromiso.',
     wsp: '¡Hola! Quiero que me coticen mi proyecto. ¿Puedo hablar con una persona?',
   },
   {
     id: 'humano',
     etiqueta: '🙋 Hablar con una persona',
     palabras: ['persona', 'humano', 'asesor', 'alguien', 'hablar', 'llamar', 'contacto', 'contactar'],
-    respuesta: '¡De una! Te atendemos por WhatsApp, o si preferís podés escribirnos por Instagram.',
+    respuesta: '¡De una! Te atiende uno de los socios de Oni Solutions por WhatsApp, o si preferís podés escribirnos por Instagram.',
     wsp: '¡Hola! Quiero hablar con una persona del equipo.',
   },
 ];
