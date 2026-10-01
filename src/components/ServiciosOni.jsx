@@ -24,6 +24,7 @@ const SERVICIOS = [
     titulo: 'IA & Automatizaciones Inteligentes',
     descripcion: 'Agentes conversacionales y flujos automatizados para acelerar la atención, captar oportunidades y conectar procesos comerciales con tus herramientas actuales.',
     tags: ['AI Agents', 'WhatsApp', 'CRM', 'Automatización'],
+    enlace: { href: 'https://app.onisolutions.com.ar', icono: 'fa-arrow-right' },
   },
   {
     id: 'SYS_04',
@@ -33,6 +34,7 @@ const SERVICIOS = [
     descripcion: 'Soluciones a medida para iOS y Android, desde la idea y el prototipo hasta la publicación, el mantenimiento y la evolución continua.',
     tags: ['iOS & Android', 'Producto Digital', 'UI/UX', 'Soporte Evolutivo'],
     destacado: true,
+    enlace: { href: '#apps-moviles', icono: 'fa-arrow-down' },
   },
 ];
 
@@ -102,9 +104,12 @@ export default function ServiciosOni() {
                     </span>
                   ))}
                 </div>
-                {item.destacado && (
-                  <a href="#apps-moviles" className="inline-flex items-center gap-2 mt-6 text-xs font-mono font-bold uppercase tracking-wider text-purple-300 hover:text-fuchsia-300 transition-colors">
-                    Explorar servicio <i className="fa-solid fa-arrow-down text-[10px]" aria-hidden="true"></i>
+                {item.enlace && (
+                  <a
+                    href={item.enlace.href}
+                    className="inline-flex items-center gap-2 mt-6 px-4 py-2.5 rounded-lg border border-purple-500/40 text-xs font-mono font-bold uppercase tracking-wider text-purple-300 hover:bg-purple-600 hover:border-purple-600 hover:text-white transition-all shadow-[0_0_15px_rgba(157,78,221,0.2)]"
+                  >
+                    Explorar servicio <i className={`fa-solid ${item.enlace.icono} text-[10px]`} aria-hidden="true"></i>
                   </a>
                 )}
               </div>
