@@ -3,6 +3,28 @@ import { motion } from 'framer-motion';
 const PROYECTOS = [
   {
     codigo: 'PROJECT_01',
+    kanji: '診療',
+    propio: true,
+    titulo: 'Encuadre',
+    categoria: 'SaaS · Salud',
+    descripcion: 'App de gestión para profesionales de la salud que atienden por su cuenta: turnos, plus pendientes, planilla para obras sociales y recordatorios automáticos por WhatsApp. Landing con demo interactiva de la app.',
+    tags: ['SaaS', 'Salud', 'WhatsApp', 'Demo Interactiva'],
+    linkText: 'Ver Proyecto // 診療',
+    link: 'https://encuadre.onisolutions.com.ar/',
+  },
+  {
+    codigo: 'PROJECT_02',
+    kanji: '鍛錬',
+    propio: true,
+    titulo: 'Molinete',
+    categoria: 'SaaS · Gimnasios',
+    descripcion: 'App para gimnasios: entrada con QR, control de cuotas y morosos, link de pago por Mercado Pago, clases con cupo y asistente de WhatsApp que atiende a los socios las 24 horas.',
+    tags: ['SaaS', 'Gimnasios', 'QR', 'Pagos'],
+    linkText: 'Ver Proyecto // 鍛錬',
+    link: 'https://molinete.onisolutions.com.ar/',
+  },
+  {
+    codigo: 'PROJECT_03',
     kanji: '開発',
     titulo: 'GW Desarrollos / GW Del Sol',
     categoria: 'Desarrollo Web & Branding',
@@ -12,7 +34,7 @@ const PROYECTOS = [
     link: 'https://gwdesarrollos.com.py/'
   },
   {
-    codigo: 'PROJECT_02',
+    codigo: 'PROJECT_04',
     kanji: '不動産',
     titulo: 'Plataforma Inmobiliaria & Catalogación',
     categoria: 'Plataforma & Datos',
@@ -62,7 +84,14 @@ export default function PortfolioOni() {
 
               <div className="space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 pr-8">
-                  <span className="text-[10px] font-mono text-purple-400/70 tracking-widest">{proyecto.codigo}</span>
+                  <span className="flex items-center gap-2">
+                    <span className="text-[10px] font-mono text-purple-400/70 tracking-widest">{proyecto.codigo}</span>
+                    {proyecto.propio && (
+                      <span className="text-[10px] font-mono font-semibold uppercase tracking-wider text-white bg-gradient-to-r from-purple-600 to-fuchsia-600 px-2 py-0.5 rounded">
+                        Producto Oni
+                      </span>
+                    )}
+                  </span>
                   <span className="text-xs font-mono text-fuchsia-400 uppercase tracking-wider">{proyecto.categoria}</span>
                 </div>
                 <h3 className="text-2xl font-bold text-white group-hover:text-purple-300 transition-colors [font-family:'Orbitron',sans-serif]">
