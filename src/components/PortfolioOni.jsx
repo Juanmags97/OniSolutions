@@ -25,6 +25,17 @@ const PROYECTOS = [
   },
   {
     codigo: 'PROJECT_03',
+    kanji: '予約',
+    propio: true,
+    titulo: 'TurnoFácil',
+    categoria: 'SaaS · Turnos',
+    descripcion: 'App de reservas online para negocios que trabajan con turnos: link de reserva propio, agenda sin superposiciones, cobro de seña y recordatorios automáticos a los clientes. Plan gratis y plan Pro.',
+    tags: ['SaaS', 'Reservas', 'Agenda', 'Recordatorios'],
+    linkText: 'Ver Proyecto // 予約',
+    link: 'https://rater31.github.io/app-de-turnos/',
+  },
+  {
+    codigo: 'PROJECT_04',
     kanji: '開発',
     titulo: 'GW Desarrollos / GW Del Sol',
     categoria: 'Desarrollo Web & Branding',
