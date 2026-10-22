@@ -45,7 +45,7 @@ const PROYECTOS = [
     link: 'https://gwdesarrollos.com.py/'
   },
   {
-    codigo: 'PROJECT_04',
+    codigo: 'PROJECT_05',
     kanji: '不動産',
     titulo: 'Plataforma Inmobiliaria & Catalogación',
     categoria: 'Plataforma & Datos',
