@@ -38,7 +38,7 @@ export default function HeroOni() {
           </div>
 
           <p className="text-neutral-400 text-sm sm:text-base max-w-xl leading-relaxed mx-auto lg:mx-0">
-            Creamos sitios web, aplicaciones móviles, plataformas de gestión y automatizaciones inteligentes que mejoran la experiencia de tus usuarios y hacen avanzar tu negocio.
+            Creamos sitios web, aplicaciones móviles, sistemas de gestión y bots de WhatsApp con inteligencia artificial para negocios de Argentina: mejoran la experiencia de tus clientes y hacen avanzar tu negocio.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
