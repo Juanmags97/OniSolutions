@@ -32,7 +32,7 @@ const PROYECTOS = [
     descripcion: 'App de reservas online para negocios que trabajan con turnos: link de reserva propio, agenda sin superposiciones, cobro de seña y recordatorios automáticos a los clientes. Plan gratis y plan Pro.',
     tags: ['SaaS', 'Reservas', 'Agenda', 'Recordatorios'],
     linkText: 'Ver Proyecto // 予約',
-    link: 'https://rater31.github.io/app-de-turnos/',
+    link: 'https://turnosfacil.netlify.app/',
   },
   {
     codigo: 'PROJECT_04',
