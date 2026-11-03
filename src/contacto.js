@@ -1,6 +1,8 @@
 // Datos de contacto centralizados. El número es el del asistente de WhatsApp (Bot-wsp).
 export const WHATSAPP_NUMERO = '5493876368439';
 export const INSTAGRAM_URL = 'https://www.instagram.com/0ni.solutions/';
+export const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61593732369711';
+export const GOOGLE_RESENA_URL = 'https://g.page/r/CU9pqb7ewbbVEAI/review';
 
 // Mensajes precargados: el asistente los reconoce y responde la opción que corresponde
 export const MENSAJES_WSP = {

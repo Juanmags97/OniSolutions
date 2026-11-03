@@ -1,5 +1,5 @@
 import logoOni from '../assets/OniNav.png';
-import { whatsappUrl, INSTAGRAM_URL } from '../contacto';
+import { whatsappUrl, INSTAGRAM_URL, FACEBOOK_URL, GOOGLE_RESENA_URL } from '../contacto';
 
 const SERVICIOS = [
   ['Desarrollo Web', '#servicios'],
@@ -57,6 +57,22 @@ export default function FooterOni() {
             className="flex items-center gap-2 mt-3 text-sm text-white hover:text-purple-300 transition-colors"
           >
             <i className="fa-brands fa-instagram text-base text-purple-400" aria-hidden="true"></i> @0ni.solutions
+          </a>
+          <a
+            href={FACEBOOK_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 mt-3 text-sm text-white hover:text-purple-300 transition-colors"
+          >
+            <i className="fa-brands fa-facebook text-base text-purple-400" aria-hidden="true"></i> Oni Solutions
+          </a>
+          <a
+            href={GOOGLE_RESENA_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 mt-3 text-sm text-white hover:text-purple-300 transition-colors"
+          >
+            <i className="fa-brands fa-google text-base text-purple-400" aria-hidden="true"></i> Dejanos tu reseña
           </a>
           <p className="mt-4 text-[10px] font-mono uppercase tracking-wider text-neutral-600">Salta · Argentina</p>
         </div>
